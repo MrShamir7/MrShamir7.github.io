@@ -4,7 +4,7 @@ title: "About"
 
 ### About Me
 
-My name is Siddartha Devic, but I usually go by sid. I am an undergraduate at The University of Texas at Dallas, double majoring in mathematics and computer science. I am broadly interested in machine learning and theoretical computer science. I made this blog to post about interesting things I have found online, made, or want to learn. 
+My name is Siddartha Devic, but I usually go by sid. I am an undergraduate at The University of Texas at Dallas, double majoring in mathematics and computer science. I am broadly interested in machine learning and theoretical computer science. I made this blog to post about interesting things I have found, made, or want to learn. 
 
 This blog
 
