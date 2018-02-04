@@ -9,8 +9,8 @@ permalink: pretty
 excerpt_separator: "\n\n\n" # two blank lines
 
 style:
-  minimalist: false
-  dark: true
+  minimalist: true
+  dark: false
 
 navigation:
   - index.html
