@@ -18,8 +18,8 @@ navigation:
   - archive.html
 
 comments:
-  disqus: "disqus-contrast"
-  isso: "comments.musings.me"
+  disqus: "musingsblog-1"
+#  isso: "comments.musings.me"
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
   - github: "https://github.com/sid-devic"
