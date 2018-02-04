@@ -2,7 +2,7 @@ title: "musings.me"
 author: "sid devic"
 description: "tech musings and projects"
 more: "read more »"
-url: ""
+url: "http://159.203.183.245"
 baseurl: ""
 paginate: 4
 permalink: pretty
@@ -22,10 +22,9 @@ comments:
 #  isso: "comments.mysite.org"
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
-  - twitter: "https://twitter.com/sid-devic"
   - github: "https://github.com/sid-devic"
   - envelope: "mailto:sid.devic@utd.edu"
-  - linkedin: "www.linkedin.com/in/sid-devic"
+  - linkedin: "sid-devic"
 
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
 sass: {style: expanded}
