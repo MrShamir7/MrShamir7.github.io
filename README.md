@@ -1,5 +1,7 @@
 # Contrast
 
+This is the source code for my personal blog, forked from [here](https://github.com/niklasbuschmann/contrast). Thank you to Niklas for creating such a nice, simple blog template!
+
 ### Note
 
 Create a `master`-branch and adjust `_config.yml` if you want to use this theme in the root folder of `yourname.github.io`.
