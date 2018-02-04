@@ -23,9 +23,9 @@ comments:
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
   - github: "https://github.com/sid-devic"
-  - envelope: "mailto:sid.devic@utd.edu"
   - linkedin: "https://linkedin.com/in/sid-devic"
-
+  - envelope: "mailto:sid.devic@utd.edu"
+ 
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
 sass: {style: expanded}
 plugins: [jekyll-feed, jekyll-paginate]
