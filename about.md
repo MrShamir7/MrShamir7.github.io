@@ -19,6 +19,7 @@ I enjoy playing classical piano, go, and the occasional video game. I also love 
 ### [Resume](/assets/Resume.pdf)
 
 > Time expands, then contracts, all in tune with the stirrings of the heart.
+
 _-Haruki Murakami, Kafka on The Shore_
 
 
