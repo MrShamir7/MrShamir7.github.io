@@ -1,5 +1,7 @@
 ---
 title: "Hosting a Jekyll Site on a VPS"
-date: 2017-01-01 00:30:00
+date: 2018-02-04 12:30:00
+categories: jekyll vps digitalocean
 ---
 
+This is a new test post.
