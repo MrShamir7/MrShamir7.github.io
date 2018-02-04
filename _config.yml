@@ -25,6 +25,7 @@ links: # see http://fontawesome.io/icons/#brand for all possible icons
   - twitter: "https://twitter.com/sid-devic"
   - github: "https://github.com/sid-devic"
   - envelope: "mailto:sid.devic@utd.edu"
+  - linkedin: "www.linkedin.com/in/sid-devic"
 
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
 sass: {style: expanded}
