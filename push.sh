@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "$date + "%T""
+git commit -m "\$(date + "%T")"
 git push droplet gh-pages
