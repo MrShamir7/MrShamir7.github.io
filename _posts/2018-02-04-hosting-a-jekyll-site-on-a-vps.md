@@ -18,6 +18,40 @@ So we need three things:
 We can begin by installing jekyll and it's dependencies on both our remote and local machine:
 
 {% highlight bash %}
-$ sudo apt-get install ruby ruby-all-dev jekyll git-core build-essential
+$ sudo apt-get install ruby ruby-all-dev git-core build-essential
+$ sudo gem install jekyll
 {% endhighlight %}
 
+
+Let's say we wanted to use someone's open source jekyll theme. I found mine from [here](https://github.com/jekyll/jekyll/wiki/Themes), as I did not want the basic jekyll layout. Shoutout to [niklasbuschmann](https://github.com/niklasbuschmann/contrast) for making the awesome theme! What we do now is fork the theme on github, then clone the fork.
+
+On our local machine:
+
+{% highlight bash %}
+$ git clone https://github.com/sid-devic/contrast
+{% endhighlight %}
+
+cd into the cloned directory. Then pop:
+
+{% highlight bash %}
+$ jekyll serve
+{% endhighlight %}
+
+to check if your jekyll installed correctly. If it did, you should be able to navigate to 127.0.0.1:4000 in your browser and see the theme you just cloned, basic and unmodified.
+
+If you ran into a jekyll dependency error (I did), just install whatever jekyll packages you were missing:
+
+{% highlight bash %}
+$ sudo gem install jekyll-packagename
+{% endhighlight %}
+
+Now that we have the theme working on our local machine, it's time to create a copy on our remote machine.
+
+{% highlight bash $}
+$ cd ~/
+$ mkdir repos && cd repos
+$ mkdir blog.git && cd blog.git
+$ git init --bare
+{% endhighlight %}
+
+We make a new directory, cd into it, then initialize a "bare" git repo. We do this because we want the repo on our remote machine to be in sync with the one on our local machine. Next, 

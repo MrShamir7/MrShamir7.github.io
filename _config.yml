@@ -18,7 +18,7 @@ navigation:
   - archive.html
 
 comments:
-  disqus: "musingsblog-1"
+   disqus: "musingsblog-1"
 #  isso: "comments.musings.me"
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
