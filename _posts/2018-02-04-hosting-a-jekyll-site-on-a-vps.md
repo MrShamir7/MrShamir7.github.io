@@ -1,7 +1,6 @@
 ---
 title: "Hosting a VPS-based Jekyll Site"
 date: 2018-02-04 12:30:00
-categories: jekyll vps digitalocean
 ---
 
 As I was trying to set up this blog, I ran into some issues regarding running Jekyll, a static site builder, and wanted to write a short post helping anyone attempting the same configuration that I was shooting for.
@@ -47,8 +46,9 @@ $ sudo gem install jekyll-packagename
 
 Now that we have the theme working on our local machine, it's time to create a copy on our remote machine.
 
-
-
+{% highlight bash %}
+$ 
+{% endhighlight %}
 
 
 We make a new directory, cd into it, then initialize a "bare" git repo. We do this because we want the repo on our remote machine to be in sync with the one on our local machine. Next, 
