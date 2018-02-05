@@ -47,8 +47,8 @@ $ sudo gem install jekyll-packagename
 
 Now that we have the theme working on our local machine, it's time to create a copy on our remote machine.
 
-{% highlight bash $}
-$ mkdir repos
-{% endhighlight %}
+
+
+
 
 We make a new directory, cd into it, then initialize a "bare" git repo. We do this because we want the repo on our remote machine to be in sync with the one on our local machine. Next, 
