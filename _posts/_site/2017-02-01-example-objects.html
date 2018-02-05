@@ -1,0 +1,55 @@
+<h3 id="code">Code</h3>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">static</span> <span class="kt">void</span> <span class="nf">asyncEnabled</span><span class="p">(</span><span class="n">Dict</span><span class="o">*</span> <span class="n">args</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">vAdmin</span><span class="p">,</span> <span class="n">String</span><span class="o">*</span> <span class="n">txid</span><span class="p">,</span> <span class="k">struct</span> <span class="n">Allocator</span><span class="o">*</span> <span class="n">requestAlloc</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">Admin</span><span class="o">*</span> <span class="n">admin</span> <span class="o">=</span> <span class="n">Identity_check</span><span class="p">((</span><span class="k">struct</span> <span class="n">Admin</span><span class="o">*</span><span class="p">)</span> <span class="n">vAdmin</span><span class="p">);</span>
+    <span class="kt">int64_t</span> <span class="n">enabled</span> <span class="o">=</span> <span class="n">admin</span><span class="o">-&gt;</span><span class="n">asyncEnabled</span><span class="p">;</span>
+    <span class="n">Dict</span> <span class="n">d</span> <span class="o">=</span> <span class="n">Dict_CONST</span><span class="p">(</span><span class="n">String_CONST</span><span class="p">(</span><span class="s">"asyncEnabled"</span><span class="p">),</span> <span class="n">Int_OBJ</span><span class="p">(</span><span class="n">enabled</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">Admin_sendMessage</span><span class="p">(</span><span class="o">&amp;</span><span class="n">d</span><span class="p">,</span> <span class="n">txid</span><span class="p">,</span> <span class="n">admin</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="quote">Quote</h3>
+
+<blockquote>
+  <p>They who can give up essential liberty to obtain a little temporary safety, deserve neither liberty nor safety.</p>
+
+  <p><em>Benjamin Franklin</em></p>
+</blockquote>
+
+<h3 id="table">Table</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>First Header</th>
+      <th>Second Header</th>
+      <th>Third Header</th>
+      <th>Fourth Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First Entry</td>
+      <td>Second Entry</td>
+      <td>Third Entry</td>
+      <td>Fourth Entry</td>
+    </tr>
+    <tr>
+      <td>Fifth Entry</td>
+      <td>Sixth Entry</td>
+      <td>Seventh Entry</td>
+      <td>Eight Entry</td>
+    </tr>
+    <tr>
+      <td>Ninth Entry</td>
+      <td>Tenth Entry</td>
+      <td>Eleventh Entry</td>
+      <td>Twelfth Entry</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="image">Image</h3>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Photography_by_Victor_Albert_Grigas_%281919-2017%29_000172050002_%2837159721864%29.jpg/1039px-Photography_by_Victor_Albert_Grigas_%281919-2017%29_000172050002_%2837159721864%29.jpg" alt="subtle swirly bokeh in the background" /></p>
+

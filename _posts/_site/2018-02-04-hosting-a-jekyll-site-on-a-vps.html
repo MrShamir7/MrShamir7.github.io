@@ -1,0 +1,17 @@
+<p>As I was trying to set up this blog, I ran into some issues regarding running Jekyll, a static site builder, and wanted to write a short post helping anyone attempting the same configuration that I was shooting for.</p>
+
+<p>I began with my digital ocean hosted VPS (which, for students using the <a href="https://education.github.com/pack">github student dev pack</a>, offers $60 of hosting credit) with Apache2, as I haven’t been exposed to much nginx.</p>
+
+<p>My goal was to get a modifiable jekyll repo on my local machine that I could update posts/blog with. I wanted to work on my local machine, in case I didn’t have internet/connection to my server, and then push changes to my VPS and github.</p>
+
+<p>So we need three things:</p>
+<ol>
+  <li>A local git repo</li>
+  <li>A github repo</li>
+  <li>A remote repo on our VPS</li>
+</ol>
+
+<p>We can begin by installing jekyll and it’s dependencies on both our remote and local machine:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby ruby-all-dev jekyll git-core build-essential</code></pre></figure>
+
