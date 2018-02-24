@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<meta name="author" content="Blog Author">
-<meta name="description" content="Really cool blog about ... something">
-<title> Home › Blog Title</title>
+<meta name="author" content="sid devic">
+<meta name="description" content="tech musings and projects">
+<title> Home › musings.me</title>
 <link rel="canonical" href="http://localhost:4000/">
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="/basic.css" rel="stylesheet">
 <link href="/highlight.css" rel="stylesheet">
 <link href="/index.css" rel="stylesheet">
-<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Blog Title" />
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="musings.me" />
 
 
 <header>
-  <h1><a href="">Blog Title</a></h1>
+  <h1><a href="">musings.me</a></h1>
   <nav>
-    <div><a href="/">Home</a><a href="/about/">Aboutaboot</a><a href="/archive/">Archive</a></div>
-    <div><a href="https://twitter.com/sid-devic"><i class="fa fa-twitter"></i></a><a href="https://github.com/sid-devic"><i class="fa fa-github"></i></a><a href="mailto:niklas.buschmann@posteo.de"><i class="fa fa-envelope"></i></a></div>
+    <div><a href="/">Home</a><a href="/about/">About</a><a href="/archive/">Archive</a></div>
+    <div><a href="https://github.com/sid-devic"><i class="fa fa-github"></i></a><a href="https://linkedin.com/in/sid-devic"><i class="fa fa-linkedin"></i></a><a href="mailto:sid.devic@utd.edu"><i class="fa fa-envelope"></i></a></div>
   </nav>
 </header>
 <main>
   
+  <article>
+    <header>
+      <h1><a href="/2018/02/04/hosting-a-jekyll-site-on-a-vps/">Hosting a VPS-based Jekyll Site</a></h1>
+      <time datetime="2018-02-04T06:30:00-06:00">February 4, 2018</time>
+    </header>
+    <div>
+<p>As I was trying to set up this blog, I ran into some issues regarding running Jekyll, a static site builder, and wanted to write a short post helping anyone attempting the same configuration that I was shooting for.</p>
+
+<p>I began with my digital ocean hosted VPS (which, for students using the <a href="https://education.github.com/pack">github student dev pack</a>, offers $60 of hosting credit) with Apache2, as I haven’t been exposed to much nginx.</p>
+
+<p>My goal was to get a modifiable jekyll repo on my local machine that I could update posts/blog with. I wanted to work on my local machine, in case I didn’t have internet/connection to my server, and then push changes to my VPS and github.</p>
+
+<p>So we need three things:</p>
+<ol>
+  <li>A local git repo</li>
+  <li>A github repo</li>
+  <li>A remote repo on our VPS</li>
+</ol>
+
+<p>We can begin by installing jekyll and it’s dependencies on both our remote and local machine:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby ruby-all-dev git-core build-essential
+<span class="nv">$ </span><span class="nb">sudo </span>gem <span class="nb">install </span>jekyll</code></pre></figure>
+
+
+    </div>
+    
+    <footer><a class="ghost" href="/2018/02/04/hosting-a-jekyll-site-on-a-vps/">read more »</a></footer>
+    
+  </article>
+
   <article>
     <header>
       <h1><a href="/text/2017/02/17/example-text/">Example Text</a></h1>
@@ -62,13 +93,25 @@
     
   </article>
 
-</main>
+  <article>
+    <header>
+      <h1><a href="/2016/12/31/pagination-works/">Pagination works</a></h1>
+      <time datetime="2016-12-31T18:30:00-06:00">December 31, 2016</time>
+    </header>
+    <div>
+<blockquote>
+  <p>Pagination is the process of dividing a document into discrete pages, either electronic pages or printed pages.</p>
 
-<footer>
-    <a  class="disabled" >« newer posts</a>
-    <span class="paginate">page 1 of 2</span>
-    <a  class="gray" href="/page2" >older posts »</a>
-</footer>
+  <p>In reference to books produced without a computer, pagination can mean the consecutive page numbering to indicate the proper order of the pages, which was rarely found in documents pre-dating 1500, and only became common practice c. 1550, when it replaced foliation, which numbered only the front sides of folios.</p>
+
+  <p>- <a href="https://en.wikipedia.org/wiki/Pagination">Wikipedia</a></p>
+</blockquote>
+
+    </div>
+    
+  </article>
+
+</main>
 
 
 

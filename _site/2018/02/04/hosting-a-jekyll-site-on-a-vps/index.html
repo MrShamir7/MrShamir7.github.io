@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="author" content="sid devic">
+<meta name="description" content="tech musings and projects">
+<title> Hosting a VPS-based Jekyll Site › musings.me</title>
+<link rel="canonical" href="http://localhost:4000/2018/02/04/hosting-a-jekyll-site-on-a-vps/">
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/basic.css" rel="stylesheet">
+<link href="/highlight.css" rel="stylesheet">
+<link href="/index.css" rel="stylesheet">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="musings.me" />
+<script src="//musingsblog-1.disqus.com/embed.js" async></script>
+
+<header>
+  <h1><a href="">musings.me</a></h1>
+  <nav>
+    <div><a href="/">Home</a><a href="/about/">About</a><a href="/archive/">Archive</a></div>
+    <div><a href="https://github.com/sid-devic"><i class="fa fa-github"></i></a><a href="https://linkedin.com/in/sid-devic"><i class="fa fa-linkedin"></i></a><a href="mailto:sid.devic@utd.edu"><i class="fa fa-envelope"></i></a></div>
+  </nav>
+</header>
+<main>
+  <article>
+    <header>
+      <h1><a href="/2018/02/04/hosting-a-jekyll-site-on-a-vps/">Hosting a VPS-based Jekyll Site</a></h1>
+      <time datetime="2018-02-04T06:30:00-06:00">February 4, 2018</time>
+    </header>
+    <div>
+<p>As I was trying to set up this blog, I ran into some issues regarding running Jekyll, a static site builder, and wanted to write a short post helping anyone attempting the same configuration that I was shooting for.</p>
+
+<p>I began with my digital ocean hosted VPS (which, for students using the <a href="https://education.github.com/pack">github student dev pack</a>, offers $60 of hosting credit) with Apache2, as I haven’t been exposed to much nginx.</p>
+
+<p>My goal was to get a modifiable jekyll repo on my local machine that I could update posts/blog with. I wanted to work on my local machine, in case I didn’t have internet/connection to my server, and then push changes to my VPS and github.</p>
+
+<p>So we need three things:</p>
+<ol>
+  <li>A local git repo</li>
+  <li>A github repo</li>
+  <li>A remote repo on our VPS</li>
+</ol>
+
+<p>We can begin by installing jekyll and it’s dependencies on both our remote and local machine:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby ruby-all-dev git-core build-essential
+<span class="nv">$ </span><span class="nb">sudo </span>gem <span class="nb">install </span>jekyll</code></pre></figure>
+
+<p>Let’s say we wanted to use someone’s open source jekyll theme. I found mine from <a href="https://github.com/jekyll/jekyll/wiki/Themes">here</a>, as I did not want the basic jekyll layout. Shoutout to <a href="https://github.com/niklasbuschmann/contrast">niklasbuschmann</a> for making the awesome theme! What we do now is fork the theme on github, then clone the fork.</p>
+
+<p>On our local machine:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git clone https://github.com/sid-devic/contrast</code></pre></figure>
+
+<p>cd into the cloned directory. Then pop:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>jekyll serve</code></pre></figure>
+
+<p>to check if your jekyll installed correctly. If it did, you should be able to navigate to 127.0.0.1:4000 in your browser and see the theme you just cloned, basic and unmodified.</p>
+
+<p>If you ran into a jekyll dependency error (I did), just install whatever jekyll packages you were missing:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo </span>gem <span class="nb">install </span>jekyll-packagename</code></pre></figure>
+
+<p>Now that we have the theme working on our local machine, it’s time to create a copy on our remote machine.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span></code></pre></figure>
+
+<p>We make a new directory, cd into it, then initialize a “bare” git repo. We do this because we want the repo on our remote machine to be in sync with the one on our local machine. Next,</p>
+
+    </div>
+    
+    
+    <hr><div id="disqus_thread"></div>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+  </article>
+</main>
+
+
+<footer>
+     <span></span> 
+    <a href="/text/2017/02/17/example-text/">Example Text »</a>
+</footer>
+
