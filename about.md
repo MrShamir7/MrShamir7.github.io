@@ -27,4 +27,4 @@ I enjoy playing classical piano, go, and the occasional video game. I also love 
 > _Me_   
    
 
-_This blog was forked from Niklas Buschmann's work [here](https://github.com/niklasbuschmann/contrast)._
+_My blog theme ([here](https://github.com/sid-devic/contrast)) was forked from Niklas Buschmann's theme [here](https://github.com/niklasbuschmann/contrast)._
