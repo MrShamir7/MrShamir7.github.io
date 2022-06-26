@@ -17,7 +17,7 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", title: "Home" }
-  - {file: "/assets/Centeno Padilla's Resume PDF.pdf", title: "Resume" }
+  - {file: [pdf]("assets/Centeno Padilla's Resume PDF.pdf"), title: "Resume" }
   - {file: "README.md", title: "Projects"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
