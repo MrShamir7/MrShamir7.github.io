@@ -1,6 +1,6 @@
 
 ---
-title: Professional Experience 
+title: "Professional Experience"
 layout: page
 ---
 
