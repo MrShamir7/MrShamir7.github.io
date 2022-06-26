@@ -1,6 +1,7 @@
-
 ---
 layout: page
+title: Resume
+categories: media
 ---
 
 
