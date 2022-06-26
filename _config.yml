@@ -1,7 +1,8 @@
 title: "Shamir Centeno Padilla"
 author: "Shamir Centeno Padilla"
 description: "University of Virginia"
-url: "https://shamircentenopadilla.us"
+url: "shamircentenopadilla.us"
+baseurl: ""
 permalink: pretty
 lang: "en"
 excerpt_separator: "\n\n\n"
