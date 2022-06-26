@@ -2,7 +2,7 @@
 ---
 layout: page
 title: Professional Experience 
-categories: media
+permalink: "/professional_experience/"
 
 ---
 
