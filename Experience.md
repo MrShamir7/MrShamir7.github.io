@@ -3,7 +3,6 @@
 layout: page
 title: Professional Experience 
 permalink: "/professional_experience/"
-
 ---
 
 ### Coursework
