@@ -17,12 +17,12 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", title: "Home" }
-  - {file: "file:///C:/Users/Shamir Centeno/Desktop/Centeno Padilla's Resume PDF", title: "Resume" }
+  - {file: "/assets/Centeno Padilla's Resume PDF.pdf", title: "Resume" }
   - {file: "README.md", title: "Projects"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:rns7bw@virginia.edu"}
-  - {title: Github, icon: github, url: "https://github.com/mrshamir7"}
+  - {title: Github, icon: github, url: "https://github.commrshamir7"}
   - {title: LinkedIn, icon: LinkedIn, url: "https://www.linkedin.com/in/shamir-centeno-bb5b03215"}
 
 comments:
