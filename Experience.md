@@ -1,10 +1,10 @@
 
 ---
-title: "Professional Experience"
 layout: page
+title: Professional Experience
 ---
 
-### Coursework
+### Coursework <br/>
 {:style=" text-align: center;"}
 
 - Data Analysis with Python
