@@ -2,7 +2,7 @@ title: "Shamir Centeno Padilla"
 author: "Shamir Centeno Padilla"
 description: "University of Virginia"
 url: "shamircenteno.com"
-permalink: /:title/
+permalink: pretty
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
