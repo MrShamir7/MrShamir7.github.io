@@ -4,4 +4,4 @@ layout: page
 title: "Resume"
 ---
 
-[Resume](/assets/Centeno_Padilla_Resume_PDF.pdf)<br/>
+![Resume](/assets/Centeno Padilla's Resume PDF-1.png)<br/>
