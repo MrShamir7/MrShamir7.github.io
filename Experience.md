@@ -1,7 +1,6 @@
 
 ---
 title: Professional Experience 
-permalink: "/professional_experience/"
 layout: page
 ---
 
