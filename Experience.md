@@ -4,7 +4,7 @@ layout: page
 title: Professional Experience
 ---
 
-### Coursework <br/>
+### Coursework
 {:style=" text-align: center;"}
 
 - Data Analysis with Python
