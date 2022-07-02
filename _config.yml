@@ -22,6 +22,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "resume.md", title: "Resume" }
   - {file: "README.md", title: "Projects"}
   - {file: "Experience.md", title: "Experience"}
+  - archive.html
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:rns7bw@virginia.edu"}
