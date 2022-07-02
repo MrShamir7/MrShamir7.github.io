@@ -3,10 +3,10 @@ author: "Shamir Centeno Padilla"
 description: "University of Virginia"
 url: "shamircentenopadilla.us"
 baseurl: ""
+paginate: 4
 permalink: pretty
 lang: "en"
 excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
 
 # Layout
 
@@ -32,5 +32,4 @@ comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
 
-plugins:
- - jekyll-feed
+plugins: [jekyll-feed, jekyll-paginate]
